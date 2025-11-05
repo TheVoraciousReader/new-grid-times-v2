@@ -26,7 +26,14 @@ const Avatar = styled.img`
   border-radius: 50%;
   object-fit: cover;
   float: right;
+  margin-left: 16px;
   margin-bottom: 24px;
+
+  @media ${QUERIES.tabletOnly} {
+    float: revert;
+    margin-left: revert;
+    margin-bottom: revert;
+  }
 `;
 
 const AuthorName = styled.p`
