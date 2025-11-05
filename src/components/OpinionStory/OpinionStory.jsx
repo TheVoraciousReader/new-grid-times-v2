@@ -25,6 +25,8 @@ const Avatar = styled.img`
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
+  float: right;
+  margin-bottom: 24px;
 `;
 
 const AuthorName = styled.p`
