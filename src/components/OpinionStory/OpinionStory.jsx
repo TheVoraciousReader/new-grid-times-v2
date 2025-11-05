@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { QUERIES } from "../../constants"
 const OpinionStory = ({ id, title, author, avatar }) => {
   return (
     <a href={`/story/${id}`}>
@@ -27,12 +27,10 @@ const Avatar = styled.img`
   object-fit: cover;
   float: right;
   margin-left: 16px;
-  margin-bottom: 24px;
 
   @media ${QUERIES.tabletOnly} {
     float: revert;
     margin-left: revert;
-    margin-bottom: revert;
   }
 `;
 
