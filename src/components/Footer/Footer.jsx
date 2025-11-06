@@ -195,10 +195,6 @@ const MainNavHeading = styled.h2`
   font-weight: var(--font-weight-bold);
   color: var(--color-gray-300);
   margin-bottom: 8px;
-
-  @media ${QUERIES.laptopAndUp} {
-    align-items: flex-start;
-  }
 `;
 
 const MainNavList = styled.ul`
@@ -218,6 +214,10 @@ const Subfooter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${QUERIES.laptopAndUp} {
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.a`
